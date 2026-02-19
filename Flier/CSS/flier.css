@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Monthoers';
+    src: url(../FONTS/swistblnk-monthoers/Monthoers.otf) format('woff2'),
+         url(fonts/mi-../FONTS/swistblnk-monthoers/Monthoers.otffuente.woff) format('woff');   
+}
+
+@font-face {
+    font-family: 'borderWall';
+    src: url(../FONTS/border-wall-font/BorderWall-OG55o.otf) format('woff2'),
+         url(../FONTS/border-wall-font/BorderWall-OG55o.otf) format('woff');   
+}
+
+
+
+
+#background_header{
+    background-color: rgba(17, 17, 17, 0.582);
+    display: flex;
+}
+
+#title{
+    padding: 5%;
+    font-size: 200%;
+    text-align: center;
+    font-family:'borderWall';
+    font-style: oblique;
+    color: rgb(248, 246, 195);
+    
+}
+
+#logo{
+    width: 40%;
+    margin-top: 8%;
+    margin-left: 35%;
+}
+
+
+
+
+body{
+    background-image: url(../IMG/prados.jpg);
+    background-size: cover;
+    
+}
+
+#section_body{
+    background-color: rgba(17, 17, 17, 0.582);
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-bottom: 5%;
+}
+
+#section_body_text1{
+    display: flex;
+    text-align: center;
+}
+
+#section_body_text2{
+    width: 50%;
+    text-align: center;
+}
+
+#medium_text{
+    text-align: center;
+    text-decoration: underline;
+
+    background: linear-gradient(to right, rgb(252, 102, 102), rgb(189, 12, 15));
+    background-clip: text;
+    color: transparent;
+    font-family:'borderWall';
+}
+
+#small_text{
+    font-size: 130%;
+    color: rgb(248, 246, 195);
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+footer{
+    display: flex;
+    background-color: rgba(17, 17, 17, 0.582);
+}
+
+#slogan{
+    font-family:'Monthoers';
+    color: white;
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+#stiker{
+    width: 25%;
+    transform: rotate(-10deg);
+}
