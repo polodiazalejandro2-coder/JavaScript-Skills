@@ -1,20 +1,186 @@
-/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Calibri', sans-serif;
-    background-color: #ffffff;
-    margin: 20px;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    font-family: 'Calibri', Arial, sans-serif;
+    color: #e0e0e0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    padding: 20px;
 }
-/* Exercise 1 Comparador de Textos */
 
-/* Exercise 2 Contador de Letras */
+header {
+    grid-column: 1 / -1;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Exercise 3 Raiz Cuadrada */
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0;
+}
 
-/* Exercise 4 Cambio de color */
+footer {
+    grid-column: 1 / -1;
+    background-color: #2d2d2d;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    color: #bbb;
+    font-size: 0.9rem;
+    text-align: center;
+}
 
-/* Exercise 5 Altura y ancho de una imagen */
+section[class^="exercise"] {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #3a3a3a;
+}
+
+section[class^="exercise"] h2 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: #bbbbbb;
+    border-bottom: 1px solid #444;
+    padding-bottom: 6px;
+}
+
+.exercise1,
+.exercise2,
+.exercise3 {
+    grid-column: span 2;
+}
+
+.exercise4 {
+    grid-column: 1 / -1;
+}
+
+.exercise5,
+.exercise6 {
+    grid-column: span 3;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #eee;
+    font-size: 0.95rem;
+}
+
+button {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #4a4a4a;
+}
+
+p[id$="Result"] {
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 4px solid #666;
+    font-size: 0.95rem;
+    margin-top: 8px;
+    color: #ccc;
+}
+
 .image {
-    width: 200px;
+    max-width: 100%;
     height: auto;
+    border-radius: 6px;
+    border: 1px solid #444;
+    display: block;
+    margin-top: 8px;
 }
-/* Exercise 6 Gestion de los pedidos de una cafeteria */
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.exercise4 h3 {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 16px 0 8px;
+    border-left: 3px solid #666;
+    padding-left: 8px;
+}
+
+.exercise4 label {
+    display: inline-block;
+    margin: 4px 6px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    color: #eee;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.exercise4 input[type="radio"] {
+    display: none;
+}
+
+.exercise4 label:has(#headerRed):has(input:checked) {
+    background-color: #c0392b;
+    border-color: #e74c3c;
+}
+
+.exercise4 label:has(#headerGreen):has(input:checked) {
+    background-color: #27ae60;
+    border-color: #2ecc71;
+}
+
+.exercise4 label:has(#headerBlue):has(input:checked) {
+    background-color: #2980b9;
+    border-color: #3498db;
+}
+
+.exercise4 label:has(#footerRed):has(input:checked) {
+    background-color: #c0392b;
+    border-color: #e74c3c;
+}
+
+.exercise4 label:has(#footerGreen):has(input:checked) {
+    background-color: #27ae60;
+    border-color: #2ecc71;
+}
+
+.exercise4 label:has(#footerBlue):has(input:checked) {
+    background-color: #2980b9;
+    border-color: #3498db;
+}
+
+.exercise4 label:has(#headerNormal):has(input:checked),
+.exercise4 label:has(#footerNormal):has(input:checked) {
+    background-color: #7f8c8d;
+    border-color: #95a5a6;
+}
