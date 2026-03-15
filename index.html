@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="header" class="header">
         <nav class="navbar">
-            <h1>Webadas</h1>
+            <h1 >ᴡᴇʙᴀᴅᴀꜱ</h1>
         </nav>
     </header>
 
@@ -47,8 +47,35 @@
     <!-- Exercise 4 Cambio de color (header/footer) -->
     <section class="exercise4">
         <h2>Cambio de Color</h2>
-        <button id="changeColorBtn">Cambiar Color del Header</button>
-        <button id="changeFooterColorBtn">Cambiar Color del Footer</button>
+        <h3>Cambiar Color del Header</h3>
+        <label>
+            <input type="radio" name="headerColor" value="headerNormal" id="headerNormal" onclick="cambiacolorH()">
+            Normal
+        </label>
+        <label>
+            <input type="radio" name="headerColor" value="headerRed" id="headerRed" onclick="cambiacolorH()"> Rojo
+        </label>
+        <label>
+            <input type="radio" name="headerColor" value="headerGreen" id="headerGreen" onclick="cambiacolorH()"> Verde
+        </label>
+        <label>
+            <input type="radio" name="headerColor" value="headerBlue" id="headerBlue" onclick="cambiacolorH()">
+            Azul
+        </label>
+        <h3>Cambiar Color del Footer</h3>
+        <label>
+            <input type="radio" name="footerColor" value="footerNormal" id="footerNormal" onclick="cambiacolorF()">
+            Normal
+        </label>
+        <label>
+            <input type="radio" name="footerColor" value="footerRed" id="footerRed" onclick="cambiacolorF()"> Rojo
+        </label>
+        <label>
+            <input type="radio" name="footerColor" value="footerGreen" id="footerGreen" onclick="cambiacolorF()"> Verde
+        </label>
+        <label>
+            <input type="radio" name="footerColor" value="footerBlue" id="footerBlue" onclick="cambiacolorF()"> Azul
+        </label>
     </section>
     <!-- Exercise 5 Altura y ancho de una imagen -->
     <section class="exercise5">
@@ -66,6 +93,9 @@
     <section class="exercise6">
         <h2>Gestión de Pedidos de una Cafetería</h2>
     </section>
+    <footer id="footer" class="footer">
+        <p>&copy; 2025 Alejandro Polo. Cranear duele...</p>
+    </footer>
 </body>
 
 </html>
