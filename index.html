@@ -86,12 +86,38 @@
             <label>Anchura: </label>
             <input type="number" id="width" onkeyup="cambiatamaño()" max="800">
             <br><br>
-            <img class="image" id="image" src="deidad.jpg">
+            <img class="image" id="image" src="Images/deidad.jpg">
         </div>
     </section>
-    <!-- Exercise 6 Gestion de los pedidos de una cafeteria -->
+    <!-- Exercise 6 Gestión de Pedidos de una Cafetería -->
     <section class="exercise6">
         <h2>Gestión de Pedidos de una Cafetería</h2>
+
+        <h3>Seleccione su bebida:</h3>
+        <label><input type="radio" name="order" value="coffee" onclick="pedidosimg()"> Café 1.65€</label>
+        <label><input type="radio" name="order" value="tea" onclick="pedidosimg()"> Té 2.25€</label>
+        <label><input type="radio" name="order" value="juice" onclick="pedidosimg()"> Jugo 3.50€</label>
+
+        <h3>Complementos:</h3>
+        <label><input type="radio" name="extras" value="milk" onclick="pedidosimg()"> Leche 0.50€</label>
+        <label><input type="radio" name="extras" value="sugar" onclick="pedidosimg()"> Azúcar 0.25€</label>
+
+        <h3>Aperitivos:</h3>
+        <label><input type="radio" id="galleta" name="snacks" value="cookie" onclick="pedidosimg()"> Galleta 1.25€</label>
+        <label><input type="radio" id="muffin" name="snacks" value="muffin" onclick="pedidosimg()"> Muffin 2.00€</label>
+
+        <h3>Descuento:</h3>
+        <label><input type="radio" name="discount" value="student" onclick="pedidosimg()"> Estudiante (15%)</label>
+        <label><input type="radio" name="discount" value="senior" onclick="pedidosimg()"> Mayor de 65 años (20%)</label>
+        <label><input type="radio" name="discount" value="none" onclick="pedidosimg()"> Sin descuento</label>
+        <br><br>
+        <div class="pedidos2">
+            <img src="Images/trans.png" width="200px" id="imgbebida">
+            <img src="Images/trans.png" width="200px" id="imgcomplemento">
+            <img src="Images/trans.png" width="200px" id="imgaperitivo">
+        </div>
+        <h3>Total a pagar: <span id="total">0.00€</span></h3>
+
     </section>
 </body>
 <footer id="footer" class="footer">
