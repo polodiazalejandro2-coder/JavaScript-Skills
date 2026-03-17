@@ -115,16 +115,6 @@ p[id$="Result"] {
     margin-top: 8px;
 }
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
 .exercise4 h3 {
     color: #ccc;
     font-size: 1.1rem;
@@ -184,3 +174,38 @@ input[type=number] {
     background-color: #7f8c8d;
     border-color: #95a5a6;
 }
+
+.exercise6 h3 {
+    color: #ccc;
+    font-size: 1.5rem;
+    margin: 16px 0 8px;
+    border-left: 3px solid #666;
+    padding-left: 8px;
+}
+.exercise6 label {
+    display: inline-block;
+    margin: 4px 6px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    color: #eee;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.exercise6 img {
+    display: none; 
+}
+
+.mostrar-img {
+    display: block !important; 
+    margin: 10px auto;
+}
+
+.pedidos2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
